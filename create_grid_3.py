@@ -1,5 +1,11 @@
+# This line means that we will use the built in random module to generate numbers.
+# This will be used to generate a random coordinate for the computer's ships and guesses.
+
 from random import randint
 
+
+# This is a list that will match letters A-J, to numbers 1-10 in order.
+# This is important for the inputting the coordinates, for the battleships game.
 
 letters_grid = {
     1 : 'A',
@@ -11,8 +17,10 @@ letters_grid = {
     7 : 'G',
     8 : 'H',
     9 : 'I',
-    10 : 'J' 
+    10 : 'J', 
     }
+
+
 
 num_list = list(range(1,11))
 
@@ -32,14 +40,13 @@ def print_grid():
         rows.append(first + " " + second)
     return '\n'.join(rows)
 
+
 def side_by_side():
     user_board = print_grid().split('\n')
     computer_board = print_grid().split('\n')
 
-    width = max(len(row) for row in user_board)
-
-    for r1, r2 in zip(user_board, computer_board):
-        print(f'{r1:<{width}}   {r2}')
+    for left, right in zip(user_board, computer_board):
+        print(left + "     " + right)
 
 side_by_side()
 
