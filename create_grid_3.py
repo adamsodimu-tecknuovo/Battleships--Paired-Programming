@@ -13,6 +13,7 @@ letters_grid = {
     9 : 'I',
     10 : 'J' 
     }
+
 num_list = list(range(1,11))
 
 def print_grid():
@@ -41,3 +42,5 @@ def side_by_side():
         print(f'{r1:<{width}}   {r2}')
 
 side_by_side()
+
+#natalia
