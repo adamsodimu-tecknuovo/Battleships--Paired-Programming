@@ -30,9 +30,13 @@ def side_by_side():
         print(f'{r1:<{width}}   {r2}')
     return user_board, computer_board
 
+
 def get_user_grid():
     user_grid_data, _ = side_by_side()
     return user_grid_data
 
 def get_computer_grid():
+    _, computer_grid = side_by_side()
+    return computer_grid
+
     pass
