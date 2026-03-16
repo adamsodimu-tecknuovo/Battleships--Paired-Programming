@@ -32,8 +32,9 @@ def side_by_side():
 def get_user_grid():
     pass
 
+
 def get_computer_grid():
-
-
+    _, computer_grid = side_by_side()
+    return computer_grid
 
     pass
