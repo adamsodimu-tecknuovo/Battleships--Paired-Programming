@@ -31,12 +31,13 @@ def print_grid():
         rows.append(first + " " + second)
     return '\n'.join(rows)
 
-
 def side_by_side():
     user_board = print_grid().split('\n')
     computer_board = print_grid().split('\n')
 
-    for left, right in zip(user_board, computer_board):
-        print(left + "     " + right)
+    width = max(len(row) for row in user_board)
+
+    for r1, r2 in zip(user_board, computer_board):
+        print(f'{r1:<{width}}   {r2}')
 
 side_by_side()
