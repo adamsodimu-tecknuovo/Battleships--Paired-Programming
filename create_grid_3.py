@@ -29,6 +29,4 @@ def side_by_side():
     for r1, r2 in zip(user_board, computer_board):
         print(f'{r1:<{width}}   {r2}')
 
-side_by_side()
-
-#natalia
+def 
