@@ -27,11 +27,11 @@ def create_ship(board):
         
 
 
-    for ship in range(3):
-        ship_row, ship_column = randint (0,10), (0,10)
-        while board[ship_row, ship_column] == 'X':
-            ship_row, ship_column = randint (0,10), randint (0,10)
-        board[ship_row,ship_column] = 'X'
+    # for ship in range(3):
+    #     ship_row, ship_column = randint (0,10), (0,10)
+    #     while board[ship_row, ship_column] == 'X':
+    #         ship_row, ship_column = randint (0,10), randint (0,10)
+    #     board[ship_row,ship_column] = 'X'
 
 
 
