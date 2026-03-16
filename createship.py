@@ -1,6 +1,6 @@
 import random
 from random import randint
-
+from data import letters_grid
 
 user_ship = []
 computer_ship = []
@@ -24,6 +24,8 @@ def create_ship(board):
         coordinate = [ (x, y+i) for i in range(3) ]
 
     return coordinate
+
+
         
 
 

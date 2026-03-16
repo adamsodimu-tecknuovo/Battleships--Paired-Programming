@@ -1,18 +1,6 @@
 from random import randint
+from data import letters_grid
 
-
-letters_grid = {
-    1 : 'A',
-    2 : 'B',
-    3 : 'C',
-    4 : 'D',
-    5 : 'E',
-    6 : 'F',
-    7 : 'G',
-    8 : 'H',
-    9 : 'I',
-    10 : 'J' 
-    }
 
 num_list = list(range(1,11))
 
@@ -41,6 +29,7 @@ def side_by_side():
     for r1, r2 in zip(user_board, computer_board):
         print(f'{r1:<{width}}   {r2}')
 
-side_by_side()
-
-#natalia
+def get_user_grid():
+    pass
+def get_computer_grid():
+    pass
