@@ -29,4 +29,7 @@ def side_by_side():
     for r1, r2 in zip(user_board, computer_board):
         print(f'{r1:<{width}}   {r2}')
 
-def 
+def get_user_grid():
+    pass
+def get_computer_grid():
+    pass
