@@ -8,15 +8,18 @@ from data import letters_grid
 test_board = [['~', '~', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', 'X', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', 'X', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', 'X', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', '~', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', '~', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', '~', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', '~', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', '~', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', '~', '~', '~', '~', '~', '~', '~', '~', '~']]
 
 def display_pretty_board(board):
+    # print numbers
+    numbers_list = [str(i) for i in range(1,11)]
+    numbers = "   " + "  ".join(numbers_list)
+    print(numbers)
+    
+    for index, row in enumerate(board):
+        letter = letters_grid[index+1]
+        each_row = " "+"  ".join(row)
+        print(letter, each_row)
 
-    for _ in enumerate(board):
-        for i in _:
-            print(i, end= " ")
-        print()
-
+print("YOUR BOARD: ")
+print("\n" *1 )
 display_pretty_board(test_board)
-        
-
-
 
 
