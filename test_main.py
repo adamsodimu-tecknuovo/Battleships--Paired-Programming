@@ -1,6 +1,7 @@
 from grid_generator import generate_playing_grid
 from createship import create_ship
 from place_ship import place_ship_on_board
+from display_pretty_board import display_pretty_board
 
 
 # This function will be used to link all the 3 modules we created together.
@@ -15,8 +16,14 @@ def test_main():
     computer_ship = create_ship()
     place_ship_on_board(user_ship, user_board)
     place_ship_on_board(computer_ship,computer_board) 
-    print(user_board)
-    print(computer_board)
+    # print(user_board)
+    # print(computer_board)
+
+    pretty_board = display_pretty_board(user_board)
+    print(pretty_board)
+
+
+
 
 test_main()
 
