@@ -1,19 +1,20 @@
 import random
 from random import randint
-from data import letters_grid
 
 user_ship = []
 computer_ship = []
 
 
-def create_ship(board):
+def create_ship():
 
     options = [ 'Horizontal', 'Vertical']
 
     position = random.choice(options)
     if position == 'Horizontal':
-        x = randint(0,10)
-        y = randint(0,10)
+        # We had a rage of 0-10 but I've changed this to 7 
+        # since the opeation below (x+1,y) will crash if out of range
+        x = randint(0,7)
+        y = randint(0,7)
 
         coordinate = [ (x+i,y) for i in range(3) ]
 
@@ -24,7 +25,6 @@ def create_ship(board):
         coordinate = [ (x, y+i) for i in range(3) ]
 
     return coordinate
-
 
         
 
