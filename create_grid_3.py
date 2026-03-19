@@ -29,6 +29,7 @@ def generate_playing_grid():
     playing_board = [["~" for i in range (cols)] for j in range (rows)]
     
 
+
     print(f"This is the playing board : {playing_board}")
 
 
