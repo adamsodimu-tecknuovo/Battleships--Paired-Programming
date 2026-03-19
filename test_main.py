@@ -14,8 +14,14 @@ def test_main():
     user_ship = create_ship()
     computer_ship = create_ship()
     place_ship_on_board(user_ship, user_board)
-    place_ship_on_board(computer_ship,computer_board)
+    place_ship_on_board(computer_ship,computer_board) 
+    print(user_board)
+    print(computer_board)
 
-    
+test_main()
+
+
+
+
 
 
