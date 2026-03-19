@@ -19,13 +19,15 @@ def create_ship():
         coordinate = [ (x+i,y) for i in range(3) ]
 
     else:
-        x = randint(0,10)
-        y = randint(0,10)
+        x = randint(0,7)
+        y = randint(0,7)
 
         coordinate = [ (x, y+i) for i in range(3) ]
 
     return coordinate
 
+
+create_ship()
         
 
 

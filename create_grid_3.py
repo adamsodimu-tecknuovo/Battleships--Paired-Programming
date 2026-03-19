@@ -27,10 +27,7 @@ num_list = list(range(1,11))
 def generate_playing_grid():
     cols, rows = 10, 10
     playing_board = [["~" for i in range (cols)] for j in range (rows)]
-    
-
-
-    print(f"This is the playing board : {playing_board}")
+    return f"This is the playing board : {playing_board}"
 
 
 # def store_user_grid():
