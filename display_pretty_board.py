@@ -9,7 +9,7 @@ test_board = [['~', '~', '~', '~', '~', '~', '~', '~', '~', '~'], ['~', 'X', '~'
 
 def display_pretty_board(board):
 
-    for _ in board:
+    for _ in enumerate(board):
         for i in _:
             print(i, end= " ")
         print()
