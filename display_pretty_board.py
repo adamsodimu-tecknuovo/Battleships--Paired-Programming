@@ -7,15 +7,27 @@ from data import letters_grid
 
 
 def display_pretty_board(board):
+
+
+    board_builder = []
+
+
     # print numbers
     numbers_list = [str(i) for i in range(1,11)]
     numbers = "   " + "  ".join(numbers_list)
-    print(numbers)
+    # print(numbers)
     
     for index, row in enumerate(board):
         letter = letters_grid[index+1]
         each_row = " "+"  ".join(row)
-        print(letter, each_row)
+        # print(letter, each_row)
+
+    board_builder.append(numbers)
+    board_builder.append(letter)
+    board_builder.append(each_row)
+    print(board_builder)
+
+    
 
 
 

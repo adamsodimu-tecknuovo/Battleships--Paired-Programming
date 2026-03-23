@@ -19,13 +19,29 @@ def test_main():
     # print(user_board)
     # print(computer_board)
 
-    pretty_board = display_pretty_board(user_board)
-    print(pretty_board)
+    print("YOUR BOARD: ")
+    print("\n" * 2 )
+    
+
+
+    pretty_board_user = display_pretty_board(user_board)
+    print(pretty_board_user)
+
+
+    print("\n" * 2)
+
+    print("COMPUTER BOARD: ")
+    print("\n" * 2)
+
+    computer_board_user = display_pretty_board(computer_board)
+    print(computer_board_user)
+
 
 
 
 
 test_main()
+
 
 
 
