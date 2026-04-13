@@ -2,6 +2,7 @@ from grid_generator import generate_playing_grid
 from createship import create_ship
 from place_ship import place_ship_on_board
 from display_pretty_board import display_pretty_board
+from hide_computer_board import hide_computer_board
 
 
 # This function will be used to link all the 3 modules we created together.
@@ -32,13 +33,14 @@ def test_main():
     print("COMPUTER BOARD: ")
     print("\n" * 2)
 
-    computer_board_user = display_pretty_board(computer_board)
+    hidden_computer_board = hide_computer_board(computer_board)
 
+    computer_board_user = display_pretty_board(hidden_computer_board)
     for u, c in zip(pretty_board_user, computer_board_user):
         print(f"{u:<30}    {c}")
-
-
-
+    
+    print(len(pretty_board_user))
+    print(len(computer_board_user))
 
 
 test_main()
