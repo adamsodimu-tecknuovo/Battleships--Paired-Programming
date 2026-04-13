@@ -20,12 +20,11 @@ def test_main():
     # print(computer_board)
 
     print("YOUR BOARD: ")
-    print("\n" * 2 )
+    
     
 
 
     pretty_board_user = display_pretty_board(user_board)
-    print(pretty_board_user)
 
 
     print("\n" * 2)
@@ -34,7 +33,9 @@ def test_main():
     print("\n" * 2)
 
     computer_board_user = display_pretty_board(computer_board)
-    print(computer_board_user)
+
+    for u, c in zip(pretty_board_user, computer_board_user):
+        print(f"{u:<30}    {c}")
 
 
 
